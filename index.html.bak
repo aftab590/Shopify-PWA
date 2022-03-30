@@ -15,8 +15,18 @@
     <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
     <script src="js/jQuery3.4.1.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-</head>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
+
+    <script defer src="app/bluetooth.js"></script>
+    <script defer src="app/contact-picker.js"></script>
+    <script defer src="app/device-motion.js"></script>
+    <script defer src="app/file-system.js"></script>
+    <script defer src="app/idle-detection.js"></script>
+    <script defer src="app/sharing.js"></script>
+    <script defer src="app/idle-detection.js"></script>
 
 <body>
     <!-- HEADER -->
@@ -91,5 +101,10 @@
 
 <!-- content JS -->
 <script src="content.js"></script>
+<script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
 
 </html>
