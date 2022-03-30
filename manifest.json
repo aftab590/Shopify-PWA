@@ -15,7 +15,7 @@
         "short_name": "Comments",
         "description": "View recent comments",
         "url": "/comments?utm_source=homescreen",
-        "icons": [{ "src": "./512x512-No-Noise.jpg", "sizes": "192x192" }]
+        "icons": [{ "src": "./192.png", "sizes": "192x192" }]
       }
     ],
     "icons": [
