@@ -1,7 +1,7 @@
 {
     "name": "Fireship",
     "short_name": "Fireship",
-    "start_url": "/?home=true",
+    "start_url": "./index.html",
     "shortcuts": [
       {
         "name": "Activity Feed",
