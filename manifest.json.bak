@@ -1,49 +1,21 @@
 {
-    "name": "Fireship",
-    "short_name": "Fireship",
-    "start_url": "./index.html",
-    "shortcuts": [
-      {
-        "name": "Activity Feed",
-        "short_name": "Feed",
-        "description": "View your activity feed",
-        "url": "/feed?utm_source=homescreen",
-        "icons": [{ "src": "./192.png", "sizes": "192x192" }]
-      },
-      {
-        "name": "Recent Comments",
-        "short_name": "Comments",
-        "description": "View recent comments",
-        "url": "/comments?utm_source=homescreen",
-        "icons": [{ "src": "./512x512-No-Noise.jpg", "sizes": "192x192" }]
-      }
-    ],
+    "short_name": "HackTheStuff",
+    "name": "HackTheStuff blogging platform",
     "icons": [
-      {
-        "src": "./512x512-No-Noise.jpg",
-        "sizes": "512x512",
-        "type": "image/png",
-        "purpose": "maskable any"
-      }
+        {
+            "src": "./192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./512x512-No-Noise.jpg",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
     ],
-    "share_target": {
-      "action": "/share-photo",
-      "method": "POST",
-      "enctype": "multipart/form-data",
-      "params": {
-        "title": "name",
-        "text": "description",
-        "url": "link",
-        "files": [
-          {
-            "name": "photos",
-            "accept": "image/png"
-          }
-        ]
-      }
-    },
-    "theme_color": "#000000",
-    "background_color": "#FFFFFF",
-    "display": "fullscreen",
-    "orientation": "portrait"
-  }
+    "start_url": "/index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/app/",
+    "theme_color": "#3367D6"
+}

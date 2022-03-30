@@ -79,7 +79,11 @@
             document.getElementById(4).innerHTML = req.responseText;
         }
     </script>
-
+<script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
 </body>
 
 <!-- slider JS START -->
@@ -101,10 +105,6 @@
 
 <!-- content JS -->
 <script src="content.js"></script>
-<script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js');
-        }
-    </script>
+
 
 </html>
